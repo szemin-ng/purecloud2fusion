@@ -1,6 +1,17 @@
 # purecloud2fusion
 Sample Go application that pulls queue statistics from PureCloud and writes it into a Google Fusion Table.
 
+Imports the following:
+```
+	"golang.org/x/oauth2"
+	"golang.org/x/oauth2/google"
+	"google.golang.org/api/fusiontables/v2"
+	"github.com/pkg/browser"
+	"github.com/szemin-ng/purecloud"
+	"github.com/szemin-ng/purecloud/analytics"
+	"github.com/szemin-ng/purecloud/routing"
+```
+
 ## Instructions
 ### PureCloud configuration
 Create a new OAuth configuration with Client Credentials login and with a role that has access to queue statistics. Copy the Client ID and Client Secret from the OAuth configuration to the app's JSON configuration file.
