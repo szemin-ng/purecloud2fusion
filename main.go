@@ -53,8 +53,8 @@ var supportedMediaType = []string{"voice", "chat", "email"}
 // OAuth2 configuration to connect to Google API. The ClientID and ClientSecret is created at https://console.developers.google.com.
 // Create an OAuth client ID for application type Other
 var oauthConfig = oauth2.Config{
-	ClientID:     "323105816832-suipl0l0bpkd57g41mpkv90pl76p02bo.apps.googleusercontent.com",
-	ClientSecret: "7BeMiNlcd7AVuSp9s9uEw4cp",
+	ClientID:     "",
+	ClientSecret: "",
 	RedirectURL:  "http://localhost:56000",
 	Scopes:       []string{"https://www.googleapis.com/auth/fusiontables"},
 	Endpoint:     google.Endpoint,
